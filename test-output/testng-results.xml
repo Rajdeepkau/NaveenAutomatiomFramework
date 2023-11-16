@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="13" passed="11" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-16T11:59:28 EST" name="Default suite" finished-at="2023-11-16T11:59:38 EST" duration-ms="10044">
+  <suite started-at="2023-11-05T14:50:18 EST" name="Suite" finished-at="2023-11-05T14:52:10 EST" duration-ms="111497">
     <groups>
     </groups>
-    <test started-at="2023-11-16T11:59:28 EST" name="Default test" finished-at="2023-11-16T11:59:38 EST" duration-ms="10044">
-      <class name="com.naveenautomation.test.WishlistPageTest">
-        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.test.WishlistPageTest@31c7528f]" started-at="2023-11-16T11:59:28 EST" name="loggerSteup" finished-at="2023-11-16T11:59:28 EST" duration-ms="135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSteup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.WishlistPageTest@31c7528f]" started-at="2023-11-16T11:59:28 EST" name="setUp" finished-at="2023-11-16T11:59:36 EST" duration-ms="7738" status="PASS">
+    <test started-at="2023-11-05T14:50:18 EST" name="Test" finished-at="2023-11-05T14:52:10 EST" duration-ms="111497">
+      <class name="com.naveenautomation.test.AccountPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.AccountPageTest@1921ad94]" started-at="2023-11-05T14:51:12 EST" name="setUp" finished-at="2023-11-05T14:51:16 EST" duration-ms="3831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateModificationInWishList()[pri:0, instance:com.naveenautomation.test.WishlistPageTest@31c7528f]" started-at="2023-11-16T11:59:36 EST" name="validateModificationInWishList" finished-at="2023-11-16T11:59:38 EST" duration-ms="1701" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.test.AccountPageTest@1921ad94]" started-at="2023-11-05T14:51:12 EST" name="loggerSteup" finished-at="2023-11-05T14:51:12 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggerSteup -->
+        <test-method signature="validateIfUserCanChangePassword()[pri:0, instance:com.naveenautomation.test.AccountPageTest@1921ad94]" started-at="2023-11-05T14:51:16 EST" name="validateIfUserCanChangePassword" finished-at="2023-11-05T14:51:27 EST" duration-ms="11528" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[name='confirm']"}
+  (Session info: headless chrome=119.0.6045.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-E9NU9A2', ip: '172.20.10.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 832695155587e65a7b9d7d474dd5e099
-*** Element info: {Using=css selector, value=ul[class='nav navbar-nav']>li:first-of-type}]]>
+System info: host: 'DESKTOP-E9NU9A2', ip: '10.0.0.170', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.0.0.170:4444/sessio..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02c13d59b712e7819d17a9d1f57f14d4
+*** Element info: {Using=css selector, value=input[name='confirm']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[name='confirm']"}
+  (Session info: headless chrome=119.0.6045.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-E9NU9A2', ip: '172.20.10.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 832695155587e65a7b9d7d474dd5e099
-*** Element info: {Using=css selector, value=ul[class='nav navbar-nav']>li:first-of-type}
+System info: host: 'DESKTOP-E9NU9A2', ip: '10.0.0.170', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.0.0.170:4444/sessio..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02c13d59b712e7819d17a9d1f57f14d4
+*** Element info: {Using=css selector, value=input[name='confirm']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -47,24 +47,23 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpR
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
 at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at jdk.proxy2/jdk.proxy2.$Proxy11.findElement(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy12.findElement(Unknown Source)
 at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.naveenautomation.pages.AccountPage.selectOptionFromDesktops(AccountPage.java:111)
-at com.naveenautomation.test.WishlistPageTest.validateModificationInWishList(WishlistPageTest.java:26)
+at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+at com.naveenautomation.pages.PasswordPage.enterPassword(PasswordPage.java:26)
+at com.naveenautomation.pages.PasswordPage.clickContinueButton(PasswordPage.java:30)
+at com.naveenautomation.test.AccountPageTest.validateIfUserCanChangePassword(AccountPageTest.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,15 +94,317 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateModificationInWishList -->
-        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.WishlistPageTest@31c7528f]" started-at="2023-11-16T11:59:38 EST" name="closeDown" finished-at="2023-11-16T11:59:38 EST" duration-ms="162" status="PASS">
+        </test-method> <!-- validateIfUserCanChangePassword -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.AccountPageTest@1921ad94]" started-at="2023-11-05T14:51:27 EST" name="closeDown" finished-at="2023-11-05T14:51:27 EST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDown -->
-      </class> <!-- com.naveenautomation.test.WishlistPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.AccountPageTest@1921ad94]" started-at="2023-11-05T14:51:27 EST" name="setUp" finished-at="2023-11-05T14:51:33 EST" duration-ms="5729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateNewsletterSubscription()[pri:0, instance:com.naveenautomation.test.AccountPageTest@1921ad94]" started-at="2023-11-05T14:51:33 EST" name="validateNewsletterSubscription" finished-at="2023-11-05T14:51:36 EST" duration-ms="3222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNewsletterSubscription -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.AccountPageTest@1921ad94]" started-at="2023-11-05T14:51:36 EST" name="closeDown" finished-at="2023-11-05T14:51:37 EST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- com.naveenautomation.test.AccountPageTest -->
+      <class name="com.naveenautomation.test.MacbookPageTest">
+        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.test.MacbookPageTest@7e6ef134]" started-at="2023-11-05T14:50:35 EST" name="loggerSteup" finished-at="2023-11-05T14:50:35 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggerSteup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.MacbookPageTest@7e6ef134]" started-at="2023-11-05T14:50:35 EST" name="setUp" finished-at="2023-11-05T14:50:42 EST" duration-ms="6967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateIfSearchItemDisplayed()[pri:0, instance:com.naveenautomation.test.MacbookPageTest@7e6ef134]" started-at="2023-11-05T14:50:42 EST" name="validateIfSearchItemDisplayed" finished-at="2023-11-05T14:50:44 EST" duration-ms="2244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIfSearchItemDisplayed -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.MacbookPageTest@7e6ef134]" started-at="2023-11-05T14:50:44 EST" name="closeDown" finished-at="2023-11-05T14:50:44 EST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- com.naveenautomation.test.MacbookPageTest -->
+      <class name="com.naveenautomation.test.ContactSuccessPageTest">
+        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.test.ContactSuccessPageTest@19b93fa8]" started-at="2023-11-05T14:50:28 EST" name="loggerSteup" finished-at="2023-11-05T14:50:28 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggerSteup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.ContactSuccessPageTest@19b93fa8]" started-at="2023-11-05T14:50:28 EST" name="setUp" finished-at="2023-11-05T14:50:32 EST" duration-ms="4003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateIfUserCanContact()[pri:0, instance:com.naveenautomation.test.ContactSuccessPageTest@19b93fa8]" started-at="2023-11-05T14:50:32 EST" name="validateIfUserCanContact" finished-at="2023-11-05T14:50:35 EST" duration-ms="2965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIfUserCanContact -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.ContactSuccessPageTest@19b93fa8]" started-at="2023-11-05T14:50:35 EST" name="closeDown" finished-at="2023-11-05T14:50:35 EST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- com.naveenautomation.test.ContactSuccessPageTest -->
+      <class name="com.naveenautomation.test.ReturnPageTest$PasswordPageTest">
+        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.test.ReturnPageTest$PasswordPageTest@29a0cdb]" started-at="2023-11-05T14:50:19 EST" name="loggerSteup" finished-at="2023-11-05T14:50:19 EST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggerSteup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.ReturnPageTest$PasswordPageTest@29a0cdb]" started-at="2023-11-05T14:50:19 EST" name="setUp" finished-at="2023-11-05T14:50:26 EST" duration-ms="7447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateIfUserDidNotMakeAnyReturn()[pri:0, instance:com.naveenautomation.test.ReturnPageTest$PasswordPageTest@29a0cdb]" started-at="2023-11-05T14:50:26 EST" name="validateIfUserDidNotMakeAnyReturn" finished-at="2023-11-05T14:50:28 EST" duration-ms="1852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIfUserDidNotMakeAnyReturn -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.ReturnPageTest$PasswordPageTest@29a0cdb]" started-at="2023-11-05T14:50:28 EST" name="closeDown" finished-at="2023-11-05T14:50:28 EST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- com.naveenautomation.test.ReturnPageTest$PasswordPageTest -->
+      <class name="com.naveenautomation.test.CheckoutPageTest">
+        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.test.CheckoutPageTest@1f010bf0]" started-at="2023-11-05T14:50:44 EST" name="loggerSteup" finished-at="2023-11-05T14:50:44 EST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggerSteup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.CheckoutPageTest@1f010bf0]" started-at="2023-11-05T14:50:44 EST" name="setUp" finished-at="2023-11-05T14:50:52 EST" duration-ms="7185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateInvalidCouponCode()[pri:0, instance:com.naveenautomation.test.CheckoutPageTest@1f010bf0]" started-at="2023-11-05T14:50:52 EST" name="validateInvalidCouponCode" finished-at="2023-11-05T14:51:03 EST" duration-ms="11378" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: headless chrome=119.0.6045.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E9NU9A2', ip: '10.0.0.170', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62623}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.0.0.170:4444/sessio..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ce91fcb938e9fa7808dc77e079a2f0f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=119.0.6045.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E9NU9A2', ip: '10.0.0.170', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62623}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.0.0.170:4444/sessio..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ce91fcb938e9fa7808dc77e079a2f0f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at com.naveenautomation.pages.AccountPage.clickCheckoutOption(AccountPage.java:67)
+at com.naveenautomation.test.CheckoutPageTest.validateInvalidCouponCode(CheckoutPageTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidCouponCode -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.CheckoutPageTest@1f010bf0]" started-at="2023-11-05T14:51:03 EST" name="closeDown" finished-at="2023-11-05T14:51:03 EST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- com.naveenautomation.test.CheckoutPageTest -->
+      <class name="com.naveenautomation.test.LogoutPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.LogoutPageTest@10cf09e8]" started-at="2023-11-05T14:51:03 EST" name="setUp" finished-at="2023-11-05T14:51:09 EST" duration-ms="6029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.test.LogoutPageTest@10cf09e8]" started-at="2023-11-05T14:51:03 EST" name="loggerSteup" finished-at="2023-11-05T14:51:03 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggerSteup -->
+        <test-method signature="validateIfUserCanLogout()[pri:0, instance:com.naveenautomation.test.LogoutPageTest@10cf09e8]" started-at="2023-11-05T14:51:09 EST" name="validateIfUserCanLogout" finished-at="2023-11-05T14:51:12 EST" duration-ms="2851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIfUserCanLogout -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.LogoutPageTest@10cf09e8]" started-at="2023-11-05T14:51:12 EST" name="closeDown" finished-at="2023-11-05T14:51:12 EST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- com.naveenautomation.test.LogoutPageTest -->
+      <class name="com.naveenautomation.test.LoginPageTest">
+        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:37 EST" name="loggerSteup" finished-at="2023-11-05T14:51:37 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggerSteup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:37 EST" name="setUp" finished-at="2023-11-05T14:51:40 EST" duration-ms="3686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateIfUserCanNotLoginIn()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:40 EST" name="validateIfUserCanNotLoginIn" finished-at="2023-11-05T14:51:41 EST" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIfUserCanNotLoginIn -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:41 EST" name="closeDown" finished-at="2023-11-05T14:51:41 EST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:41 EST" name="setUp" finished-at="2023-11-05T14:51:45 EST" duration-ms="3532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLoginCredentials()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:45 EST" name="validateLoginCredentials" finished-at="2023-11-05T14:51:46 EST" duration-ms="1273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginCredentials -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:46 EST" name="closeDown" finished-at="2023-11-05T14:51:46 EST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:46 EST" name="setUp" finished-at="2023-11-05T14:51:52 EST" duration-ms="5831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="valideIfUserCanLoginWithMultipleCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:52 EST" name="valideIfUserCanLoginWithMultipleCredentials" data-provider="Userdata" finished-at="2023-11-05T14:51:54 EST" duration-ms="1324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pavitarjit2213@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[K@ur7777]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valideIfUserCanLoginWithMultipleCredentials -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:54 EST" name="closeDown" finished-at="2023-11-05T14:51:54 EST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:54 EST" name="setUp" finished-at="2023-11-05T14:51:57 EST" duration-ms="3634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="valideIfUserCanLoginWithMultipleCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:57 EST" name="valideIfUserCanLoginWithMultipleCredentials" data-provider="Userdata" finished-at="2023-11-05T14:51:59 EST" duration-ms="1244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajdeepkaur451@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[K@ur6879]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valideIfUserCanLoginWithMultipleCredentials -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:59 EST" name="closeDown" finished-at="2023-11-05T14:51:59 EST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:51:59 EST" name="setUp" finished-at="2023-11-05T14:52:04 EST" duration-ms="5608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="valideIfUserCanLoginWithMultipleCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:52:04 EST" name="valideIfUserCanLoginWithMultipleCredentials" data-provider="Userdata" finished-at="2023-11-05T14:52:05 EST" duration-ms="1054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sarkaria001@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[singh@4567]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valideIfUserCanLoginWithMultipleCredentials -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:52:05 EST" name="closeDown" finished-at="2023-11-05T14:52:05 EST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:52:05 EST" name="setUp" finished-at="2023-11-05T14:52:09 EST" duration-ms="3493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="valideIfUserCanLoginWithMultipleCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:52:09 EST" name="valideIfUserCanLoginWithMultipleCredentials" data-provider="Userdata" finished-at="2023-11-05T14:52:10 EST" duration-ms="1036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mandy345@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valideIfUserCanLoginWithMultipleCredentials -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.naveenautomation.test.LoginPageTest@ee86bcb]" started-at="2023-11-05T14:52:10 EST" name="closeDown" finished-at="2023-11-05T14:52:10 EST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- com.naveenautomation.test.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

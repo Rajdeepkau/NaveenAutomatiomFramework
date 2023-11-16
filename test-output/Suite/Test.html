@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>19/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 15 23:13:17 EST 2023</td>
+<td>Started on:</td><td>Sun Nov 05 14:50:18 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>139 seconds (139148 ms)</td>
+<tr><td>Total time:</td><td>111 seconds (111497 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,71 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.naveenautomation.test.CheckoutPageTest.validateInvalidCouponCode()'><b>validateInvalidCouponCode</b><br>Test class: com.naveenautomation.test.CheckoutPageTest</td>
-<td><div><pre>java.lang.AssertionError: Invalid coupon is working expected [Warning: Coupon is either invalid, expired or reached its usage limit!
-×] but found [Products marked with *** are not available in the desired quantity or not in stock!
-×]
-	at com.naveenautomation.test.CheckoutPageTest.validateInvalidCouponCode(CheckoutPageTest.java:28)
+<td title='com.naveenautomation.test.AccountPageTest.validateIfUserCanChangePassword()'><b>validateIfUserCanChangePassword</b><br>Test class: com.naveenautomation.test.AccountPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[name=&apos;confirm&apos;]&quot;}
+  (Session info: headless chrome=119.0.6045.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E9NU9A2&apos;, ip: &apos;10.0.0.170&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.0.0.170:4444/sessio..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02c13d59b712e7819d17a9d1f57f14d4
+*** Element info: {Using=css selector, value=input[name=&apos;confirm&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at com.naveenautomation.pages.PasswordPage.enterPassword(PasswordPage.java:26)
+	at com.naveenautomation.pages.PasswordPage.clickContinueButton(PasswordPage.java:30)
+	at com.naveenautomation.test.AccountPageTest.validateIfUserCanChangePassword(AccountPageTest.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2009196049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2009196049'><pre>java.lang.AssertionError: Invalid coupon is working expected [Warning: Coupon is either invalid, expired or reached its usage limit!
-×] but found [Products marked with *** are not available in the desired quantity or not in stock!
-×]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.naveenautomation.test.CheckoutPageTest.validateInvalidCouponCode(CheckoutPageTest.java:28)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace643552582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace643552582'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[name=&apos;confirm&apos;]&quot;}
+  (Session info: headless chrome=119.0.6045.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E9NU9A2&apos;, ip: &apos;10.0.0.170&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.0.0.170:4444/sessio..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02c13d59b712e7819d17a9d1f57f14d4
+*** Element info: {Using=css selector, value=input[name=&apos;confirm&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at com.naveenautomation.pages.PasswordPage.enterPassword(PasswordPage.java:26)
+	at com.naveenautomation.pages.PasswordPage.clickContinueButton(PasswordPage.java:30)
+	at com.naveenautomation.test.AccountPageTest.validateIfUserCanChangePassword(AccountPageTest.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,8 +170,96 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>com.naveenautomation.test.CheckoutPageTest@2e1ef60</td></tr>
+<td>11</td>
+<td>com.naveenautomation.test.AccountPageTest@1921ad94</td></tr>
+<tr>
+<td title='com.naveenautomation.test.CheckoutPageTest.validateInvalidCouponCode()'><b>validateInvalidCouponCode</b><br>Test class: com.naveenautomation.test.CheckoutPageTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=119.0.6045.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E9NU9A2&apos;, ip: &apos;10.0.0.170&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62623}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.0.0.170:4444/sessio..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ce91fcb938e9fa7808dc77e079a2f0f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at com.naveenautomation.pages.AccountPage.clickCheckoutOption(AccountPage.java:67)
+	at com.naveenautomation.test.CheckoutPageTest.validateInvalidCouponCode(CheckoutPageTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1152488702", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1152488702'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=119.0.6045.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E9NU9A2&apos;, ip: &apos;10.0.0.170&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62623}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.0.0.170:4444/sessio..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ce91fcb938e9fa7808dc77e079a2f0f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at com.naveenautomation.pages.AccountPage.clickCheckoutOption(AccountPage.java:67)
+	at com.naveenautomation.test.CheckoutPageTest.validateInvalidCouponCode(CheckoutPageTest.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>com.naveenautomation.test.CheckoutPageTest@1f010bf0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -133,100 +270,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.naveenautomation.test.ProductDetailsPageTest.validateItemAddToWishlist()'><b>validateItemAddToWishlist</b><br>Test class: com.naveenautomation.test.ProductDetailsPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.naveenautomation.test.ProductDetailsPageTest@3d1848cc</td></tr>
-<tr>
-<td title='com.naveenautomation.test.ProductDetailsPageTest.validateCompareProductButton()'><b>validateCompareProductButton</b><br>Test class: com.naveenautomation.test.ProductDetailsPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.naveenautomation.test.ProductDetailsPageTest@3d1848cc</td></tr>
-<tr>
-<td title='com.naveenautomation.test.ContactSuccessPageTest.validateIfUserCanContact()'><b>validateIfUserCanContact</b><br>Test class: com.naveenautomation.test.ContactSuccessPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.naveenautomation.test.ContactSuccessPageTest@7d1cfb8b</td></tr>
-<tr>
-<td title='com.naveenautomation.test.ProductDetailsPageTest.validatePriceOfProduct()'><b>validatePriceOfProduct</b><br>Test class: com.naveenautomation.test.ProductDetailsPageTest</td>
-<td></td>
-<td>2</td>
-<td>com.naveenautomation.test.ProductDetailsPageTest@3d1848cc</td></tr>
-<tr>
-<td title='com.naveenautomation.test.LoginPageTest.valideIfUserCanLoginWithMultipleCredentials()'><b>valideIfUserCanLoginWithMultipleCredentials</b><br>Test class: com.naveenautomation.test.LoginPageTest<br>Parameters: mandy345@gmail.com, abcd@123</td>
-<td></td>
-<td>1</td>
-<td>com.naveenautomation.test.LoginPageTest@34f22f9d</td></tr>
-<tr>
-<td title='com.naveenautomation.test.RewardPageTest.validateNumberOfRewardPoints()'><b>validateNumberOfRewardPoints</b><br>Test class: com.naveenautomation.test.RewardPageTest</td>
-<td></td>
-<td>2</td>
-<td>com.naveenautomation.test.RewardPageTest@6e4566f1</td></tr>
-<tr>
-<td title='com.naveenautomation.test.ReturnPageTest.validateIfUserdidAReturn()'><b>validateIfUserdidAReturn</b><br>Test class: com.naveenautomation.test.ReturnPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.naveenautomation.test.ReturnPageTest@68b32e3e</td></tr>
-<tr>
-<td title='com.naveenautomation.test.AccountPageTest.validateNewsletterSubscription()'><b>validateNewsletterSubscription</b><br>Test class: com.naveenautomation.test.AccountPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.naveenautomation.test.AccountPageTest@39655d3e</td></tr>
-<tr>
-<td title='com.naveenautomation.test.LogoutPageTest.validateIfUserCanLogout()'><b>validateIfUserCanLogout</b><br>Test class: com.naveenautomation.test.LogoutPageTest</td>
-<td></td>
-<td>2</td>
-<td>com.naveenautomation.test.LogoutPageTest@386f0da3</td></tr>
-<tr>
-<td title='com.naveenautomation.test.LoginPageTest.validateLoginCredentials()'><b>validateLoginCredentials</b><br>Test class: com.naveenautomation.test.LoginPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.naveenautomation.test.LoginPageTest@34f22f9d</td></tr>
-<tr>
 <td title='com.naveenautomation.test.LoginPageTest.validateIfUserCanNotLoginIn()'><b>validateIfUserCanNotLoginIn</b><br>Test class: com.naveenautomation.test.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.naveenautomation.test.LoginPageTest@34f22f9d</td></tr>
+<td>com.naveenautomation.test.LoginPageTest@ee86bcb</td></tr>
 <tr>
-<td title='com.naveenautomation.test.AccountPageTest.validateCurrencyChange()'><b>validateCurrencyChange</b><br>Test class: com.naveenautomation.test.AccountPageTest</td>
+<td title='com.naveenautomation.test.ContactSuccessPageTest.validateIfUserCanContact()'><b>validateIfUserCanContact</b><br>Test class: com.naveenautomation.test.ContactSuccessPageTest</td>
 <td></td>
 <td>2</td>
-<td>com.naveenautomation.test.AccountPageTest@39655d3e</td></tr>
-<tr>
-<td title='com.naveenautomation.test.ProductDetailsPageTest.validateAddToCart()'><b>validateAddToCart</b><br>Test class: com.naveenautomation.test.ProductDetailsPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.naveenautomation.test.ProductDetailsPageTest@3d1848cc</td></tr>
-<tr>
-<td title='com.naveenautomation.test.ProductDetailsPageTest.validateTiltleOfProduct()'><b>validateTiltleOfProduct</b><br>Test class: com.naveenautomation.test.ProductDetailsPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.naveenautomation.test.ProductDetailsPageTest@3d1848cc</td></tr>
+<td>com.naveenautomation.test.ContactSuccessPageTest@19b93fa8</td></tr>
 <tr>
 <td title='com.naveenautomation.test.MacbookPageTest.validateIfSearchItemDisplayed()'><b>validateIfSearchItemDisplayed</b><br>Test class: com.naveenautomation.test.MacbookPageTest</td>
 <td></td>
 <td>2</td>
-<td>com.naveenautomation.test.MacbookPageTest@48e92c5c</td></tr>
+<td>com.naveenautomation.test.MacbookPageTest@7e6ef134</td></tr>
 <tr>
-<td title='com.naveenautomation.test.LoginPageTest.valideIfUserCanLoginWithMultipleCredentials()'><b>valideIfUserCanLoginWithMultipleCredentials</b><br>Test class: com.naveenautomation.test.LoginPageTest<br>Parameters: pavitarjit2213@gmail.com, K@ur7777</td>
+<td title='com.naveenautomation.test.AccountPageTest.validateNewsletterSubscription()'><b>validateNewsletterSubscription</b><br>Test class: com.naveenautomation.test.AccountPageTest</td>
 <td></td>
-<td>1</td>
-<td>com.naveenautomation.test.LoginPageTest@34f22f9d</td></tr>
+<td>3</td>
+<td>com.naveenautomation.test.AccountPageTest@1921ad94</td></tr>
 <tr>
 <td title='com.naveenautomation.test.LoginPageTest.valideIfUserCanLoginWithMultipleCredentials()'><b>valideIfUserCanLoginWithMultipleCredentials</b><br>Test class: com.naveenautomation.test.LoginPageTest<br>Parameters: rajdeepkaur451@gmail.com, K@ur6879</td>
 <td></td>
 <td>1</td>
-<td>com.naveenautomation.test.LoginPageTest@34f22f9d</td></tr>
+<td>com.naveenautomation.test.LoginPageTest@ee86bcb</td></tr>
 <tr>
 <td title='com.naveenautomation.test.LoginPageTest.valideIfUserCanLoginWithMultipleCredentials()'><b>valideIfUserCanLoginWithMultipleCredentials</b><br>Test class: com.naveenautomation.test.LoginPageTest<br>Parameters: sarkaria001@gmail.com, singh@4567</td>
 <td></td>
 <td>1</td>
-<td>com.naveenautomation.test.LoginPageTest@34f22f9d</td></tr>
+<td>com.naveenautomation.test.LoginPageTest@ee86bcb</td></tr>
 <tr>
-<td title='com.naveenautomation.test.WishlistPageTest.validateModificationInWishList()'><b>validateModificationInWishList</b><br>Test class: com.naveenautomation.test.WishlistPageTest</td>
+<td title='com.naveenautomation.test.LoginPageTest.valideIfUserCanLoginWithMultipleCredentials()'><b>valideIfUserCanLoginWithMultipleCredentials</b><br>Test class: com.naveenautomation.test.LoginPageTest<br>Parameters: mandy345@gmail.com, abcd@123</td>
 <td></td>
-<td>4</td>
-<td>com.naveenautomation.test.WishlistPageTest@7dda48d9</td></tr>
+<td>1</td>
+<td>com.naveenautomation.test.LoginPageTest@ee86bcb</td></tr>
+<tr>
+<td title='com.naveenautomation.test.LoginPageTest.validateLoginCredentials()'><b>validateLoginCredentials</b><br>Test class: com.naveenautomation.test.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.naveenautomation.test.LoginPageTest@ee86bcb</td></tr>
+<tr>
+<td title='com.naveenautomation.test.LoginPageTest.valideIfUserCanLoginWithMultipleCredentials()'><b>valideIfUserCanLoginWithMultipleCredentials</b><br>Test class: com.naveenautomation.test.LoginPageTest<br>Parameters: pavitarjit2213@gmail.com, K@ur7777</td>
+<td></td>
+<td>1</td>
+<td>com.naveenautomation.test.LoginPageTest@ee86bcb</td></tr>
+<tr>
+<td title='com.naveenautomation.test.ReturnPageTest$PasswordPageTest.validateIfUserDidNotMakeAnyReturn()'><b>validateIfUserDidNotMakeAnyReturn</b><br>Test class: com.naveenautomation.test.ReturnPageTest$PasswordPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.naveenautomation.test.ReturnPageTest$PasswordPageTest@29a0cdb</td></tr>
+<tr>
+<td title='com.naveenautomation.test.LogoutPageTest.validateIfUserCanLogout()'><b>validateIfUserCanLogout</b><br>Test class: com.naveenautomation.test.LogoutPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.naveenautomation.test.LogoutPageTest@10cf09e8</td></tr>
 </table><p>
 </body>
 </html>

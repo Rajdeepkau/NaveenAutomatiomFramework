@@ -13,9 +13,9 @@ import com.naveenautomation.pages.MacbookPage;
 public class MacbookPageTest extends TestBase{
 
 	
-	private LoginPage loginpage;
-	private AccountPage accountpage;
-	private MacbookPage macbookpage;
+	LoginPage loginpage;
+	AccountPage accountpage;
+	MacbookPage macbookpage;
 
 	
 	@BeforeMethod

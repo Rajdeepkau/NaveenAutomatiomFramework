@@ -10,9 +10,9 @@ import com.naveenautomation.pages.CheckoutPage;
 import com.naveenautomation.pages.LoginPage;
 
 public class CheckoutPageTest extends TestBase {
-	private LoginPage loginpage;
-	private AccountPage accountpage;
-	private CheckoutPage checkoutpage;
+	LoginPage loginpage;
+	AccountPage accountpage;
+	CheckoutPage checkoutpage;
 
 	@BeforeMethod
 	public void setUp() {
@@ -20,12 +20,14 @@ public class CheckoutPageTest extends TestBase {
 		loginpage = new LoginPage();
 	}
 
-	@Test(enabled=false)
+	@Test
 	public void validateInvalidCouponCode() {
 		accountpage = loginpage.clickLoginButton("rajdeepkaur451@gmail.com", "K@ur6879");
 		checkoutpage = accountpage.clickCheckoutOption();
 		checkoutpage.clickApplyButton("vgdsdtr65456");
-		Assert.assertEquals(checkoutpage.warningText(),"Warning: Coupon is either invalid, expired or reached its usage limit!\n×","Invalid coupon is working");
+		Assert.assertEquals(checkoutpage.warningText(),
+				"Warning: Coupon is either invalid, expired or reached its usage limit!\n×",
+				"Invalid coupon is working");
 
 	}
 

@@ -14,9 +14,9 @@ import com.naveenautomation.pages.LogoutPage;
 
 public class LogoutPageTest extends TestBase {
 
-	private LogoutPage logoutpage;
-	private LoginPage loginpage;
-	private AccountPage accountpage;
+	LogoutPage logoutpage;
+	LoginPage loginpage;
+	AccountPage accountpage;
 
 	@BeforeMethod
 	public void setUp() {
