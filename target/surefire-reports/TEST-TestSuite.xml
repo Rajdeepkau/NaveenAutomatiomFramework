@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="165.352" tests="20" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\user\eclipse-workspace\myFirstMavenProject\target\test-classes;C:\Users\user\eclipse-workspace\myFirstMavenProject\target\classes;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Windows\system32\config\systemprofile\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.2\webdrivermanager-5.5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-testng\2.20.1\allure-testng-2.20.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-java-commons\2.20.1\allure-java-commons-2.20.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-model\2.20.1\allure-model-2.20.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-test-filter\2.20.1\allure-test-filter-2.20.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\3.1.2\extentreports-3.1.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.16\bin"/>
+    <property name="sun.java.command" value="C:\Windows\TEMP\surefire6040025734360066591\surefirebooter14775446494891152633.jar C:\Windows\Temp\surefire6040025734360066591 2023-11-15T23-36-21_760-jvmRun1 surefire9038010984201893511tmp surefire_03797379649391040404tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\user\eclipse-workspace\myFirstMavenProject\target\test-classes;C:\Users\user\eclipse-workspace\myFirstMavenProject\target\classes;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Windows\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Windows\system32\config\systemprofile\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.2\webdrivermanager-5.5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Windows\system32\config\systemprofile\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-testng\2.20.1\allure-testng-2.20.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-java-commons\2.20.1\allure-java-commons-2.20.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-model\2.20.1\allure-model-2.20.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-test-filter\2.20.1\allure-test-filter-2.20.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Windows\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\3.1.2\extentreports-3.1.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Windows\system32\config\systemprofile\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Windows\system32\config\systemprofile\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.16"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\user\eclipse-workspace\myFirstMavenProject"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Windows\TEMP\surefire6040025734360066591\surefirebooter14775446494891152633.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.16+11-LTS-199"/>
+    <property name="user.name" value="DESKTOP-E9NU9A2$"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Windows\system32\config\systemprofile\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
+    <property name="java.version" value="11.0.16"/>
+    <property name="user.dir" value="C:\Users\user\eclipse-workspace\myFirstMavenProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.16\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\maven\apache-maven-3.9.4/bin;C:\Program Files\Java\jdk-11.0.16/bin;C:\Program Files\Java\jdk-11.0.16/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%JAVA_HOME%\bin;C:\Program Files\Git\cmd;C:\maven\apache-maven-3.9.4\bin;C:\Users\user\Downloads\allure-2.24.1\allure-2.24.1\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.16+11-LTS-199"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="validateCurrencyChange" classname="com.naveenautomation.test.AccountPageTest" time="2.441">
+    <failure message="Currency is not selected as expectd expected [£ Currency] but found [£]" type="java.lang.AssertionError">java.lang.AssertionError: Currency is not selected as expectd expected [£ Currency] but found [£]
+	at com.naveenautomation.test.AccountPageTest.validateCurrencyChange(AccountPageTest.java:52)
+</failure>
+    <system-out><![CDATA[2023-11-15 23:36:28 INFO  TestBase:78 - Finding element using By.cssSelector: input[name='email']
+0 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[name='email']
+2023-11-15 23:36:28 INFO  TestBase:84 - Found element using By.cssSelector: input[name='email']
+15 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[name='email']
+2023-11-15 23:36:28 INFO  TestBase:78 - Finding element using By.cssSelector: input[name='password']
+131 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[name='password']
+2023-11-15 23:36:28 INFO  TestBase:84 - Found element using By.cssSelector: input[name='password']
+154 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[name='password']
+2023-11-15 23:36:28 INFO  TestBase:78 - Finding element using By.cssSelector: input[value='Login']
+226 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[value='Login']
+2023-11-15 23:36:28 INFO  TestBase:84 - Found element using By.cssSelector: input[value='Login']
+256 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[value='Login']
+2023-11-15 23:36:28 INFO  TestBase:90 - Clicking on 
+271 [main] INFO com.naveenautomation.base.TestBase  - Clicking on 
+2023-11-15 23:36:30 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (ff38318e7e43fe7ce95ce5b261575a66)] -> css selector: input[value='Login']]
+1419 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (ff38318e7e43fe7ce95ce5b261575a66)] -> css selector: input[value='Login']]
+2023-11-15 23:36:30 INFO  TestBase:78 - Finding element using By.cssSelector: button[class='btn btn-link dropdown-toggle']
+1426 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: button[class='btn btn-link dropdown-toggle']
+2023-11-15 23:36:30 INFO  TestBase:84 - Found element using By.cssSelector: button[class='btn btn-link dropdown-toggle']
+1452 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: button[class='btn btn-link dropdown-toggle']
+2023-11-15 23:36:30 INFO  TestBase:90 - Clicking on $  
+1464 [main] INFO com.naveenautomation.base.TestBase  - Clicking on $  
+2023-11-15 23:36:30 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (ff38318e7e43fe7ce95ce5b261575a66)] -> css selector: button[class='btn btn-link dropdown-toggle']]
+1515 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (ff38318e7e43fe7ce95ce5b261575a66)] -> css selector: button[class='btn btn-link dropdown-toggle']]
+2023-11-15 23:36:30 INFO  TestBase:78 - Finding element using By.cssSelector: ul[class='dropdown-menu']>li:nth-of-type(2)
+1515 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: ul[class='dropdown-menu']>li:nth-of-type(2)
+2023-11-15 23:36:30 INFO  TestBase:84 - Found element using By.cssSelector: ul[class='dropdown-menu']>li:nth-of-type(2)
+1543 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: ul[class='dropdown-menu']>li:nth-of-type(2)
+2023-11-15 23:36:30 INFO  TestBase:90 - Clicking on £ Pound Sterling
+1551 [main] INFO com.naveenautomation.base.TestBase  - Clicking on £ Pound Sterling
+2023-11-15 23:36:31 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (ff38318e7e43fe7ce95ce5b261575a66)] -> css selector: ul[class='dropdown-menu']>li:nth-of-type(2)]
+2377 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (ff38318e7e43fe7ce95ce5b261575a66)] -> css selector: ul[class='dropdown-menu']>li:nth-of-type(2)]
+2023-11-15 23:36:31 INFO  TestBase:78 - Finding element using By.cssSelector: button[class='btn btn-link dropdown-toggle']
+2379 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: button[class='btn btn-link dropdown-toggle']
+2023-11-15 23:36:31 INFO  TestBase:84 - Found element using By.cssSelector: button[class='btn btn-link dropdown-toggle']
+2394 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: button[class='btn btn-link dropdown-toggle']
+2023-11-15 23:36:31 INFO  TestBase:156 - Getting text on £  
+2406 [main] INFO com.naveenautomation.base.TestBase  - Getting text on £  
+2023-11-15 23:36:31 INFO  TestBase:162 - Got text on £  
+2424 [main] INFO com.naveenautomation.base.TestBase  - Got text on £  
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 49069
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 15, 2023 11:36:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validateNewsletterSubscription" classname="com.naveenautomation.test.AccountPageTest" time="3.147"/>
+  <testcase name="validateInvalidCouponCode" classname="com.naveenautomation.test.CheckoutPageTest" time="11.462">
+    <failure message="element not interactable&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-E9NU9A2&apos;, ip: &apos;10.0.0.170&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 47157fb468416aff4cb0d109c7fc3a04" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E9NU9A2', ip: '10.0.0.170', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47157fb468416aff4cb0d109c7fc3a04
+	at com.naveenautomation.test.CheckoutPageTest.validateInvalidCouponCode(CheckoutPageTest.java:26)
+</failure>
+    <system-out><![CDATA[2023-11-15 23:36:43 INFO  TestBase:78 - Finding element using By.cssSelector: input[name='email']
+14501 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[name='email']
+2023-11-15 23:36:43 INFO  TestBase:84 - Found element using By.cssSelector: input[name='email']
+14526 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[name='email']
+2023-11-15 23:36:43 INFO  TestBase:78 - Finding element using By.cssSelector: input[name='password']
+14613 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[name='password']
+2023-11-15 23:36:43 INFO  TestBase:84 - Found element using By.cssSelector: input[name='password']
+14629 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[name='password']
+2023-11-15 23:36:43 INFO  TestBase:78 - Finding element using By.cssSelector: input[value='Login']
+14681 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[value='Login']
+2023-11-15 23:36:43 INFO  TestBase:84 - Found element using By.cssSelector: input[value='Login']
+14696 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[value='Login']
+2023-11-15 23:36:43 INFO  TestBase:90 - Clicking on 
+14710 [main] INFO com.naveenautomation.base.TestBase  - Clicking on 
+2023-11-15 23:36:44 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (47157fb468416aff4cb0d109c7fc3a04)] -> css selector: input[value='Login']]
+15826 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (47157fb468416aff4cb0d109c7fc3a04)] -> css selector: input[value='Login']]
+2023-11-15 23:36:44 INFO  TestBase:78 - Finding element using By.xpath: //span[text()='Shopping Cart']
+15827 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.xpath: //span[text()='Shopping Cart']
+2023-11-15 23:36:44 INFO  TestBase:84 - Found element using By.xpath: //span[text()='Shopping Cart']
+15854 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.xpath: //span[text()='Shopping Cart']
+2023-11-15 23:36:44 INFO  TestBase:90 - Clicking on 
+15862 [main] INFO com.naveenautomation.base.TestBase  - Clicking on 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 28617
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 15, 2023 11:36:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validateIfUserCanContact" classname="com.naveenautomation.test.ContactSuccessPageTest" time="4.883"/>
+  <testcase name="validateIfUserCanNotLoginIn" classname="com.naveenautomation.test.LoginPageTest" time="0.797"/>
+  <testcase name="validateLoginCredentials" classname="com.naveenautomation.test.LoginPageTest" time="1.315"/>
+  <testcase name="valideIfUserCanLoginWithMultipleCredentials" classname="com.naveenautomation.test.LoginPageTest" time="1.386"/>
+  <testcase name="valideIfUserCanLoginWithMultipleCredentials" classname="com.naveenautomation.test.LoginPageTest" time="1.411"/>
+  <testcase name="valideIfUserCanLoginWithMultipleCredentials" classname="com.naveenautomation.test.LoginPageTest" time="1.187"/>
+  <testcase name="valideIfUserCanLoginWithMultipleCredentials" classname="com.naveenautomation.test.LoginPageTest" time="1.984"/>
+  <testcase name="validateIfUserCanLogout" classname="com.naveenautomation.test.LogoutPageTest" time="2.724"/>
+  <testcase name="validateIfSearchItemDisplayed" classname="com.naveenautomation.test.MacbookPageTest" time="3.709"/>
+  <testcase name="validateAddToCart" classname="com.naveenautomation.test.ProductDetailsPageTest" time="13.348">
+    <failure message="element not interactable&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-E9NU9A2&apos;, ip: &apos;10.0.0.170&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51431}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a29e4998d42aa90b513eb0f7fee6b917" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E9NU9A2', ip: '10.0.0.170', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51431}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a29e4998d42aa90b513eb0f7fee6b917
+	at com.naveenautomation.test.ProductDetailsPageTest.validateAddToCart(ProductDetailsPageTest.java:40)
+</failure>
+    <system-out><![CDATA[2023-11-15 23:37:54 INFO  TestBase:78 - Finding element using By.cssSelector: input[name='email']
+86210 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[name='email']
+2023-11-15 23:37:54 INFO  TestBase:84 - Found element using By.cssSelector: input[name='email']
+86235 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[name='email']
+2023-11-15 23:37:54 INFO  TestBase:78 - Finding element using By.cssSelector: input[name='password']
+86319 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[name='password']
+2023-11-15 23:37:54 INFO  TestBase:84 - Found element using By.cssSelector: input[name='password']
+86350 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[name='password']
+2023-11-15 23:37:55 INFO  TestBase:78 - Finding element using By.cssSelector: input[value='Login']
+86406 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[value='Login']
+2023-11-15 23:37:55 INFO  TestBase:84 - Found element using By.cssSelector: input[value='Login']
+86421 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[value='Login']
+2023-11-15 23:37:55 INFO  TestBase:90 - Clicking on 
+86435 [main] INFO com.naveenautomation.base.TestBase  - Clicking on 
+2023-11-15 23:37:56 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (a29e4998d42aa90b513eb0f7fee6b917)] -> css selector: input[value='Login']]
+88063 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (a29e4998d42aa90b513eb0f7fee6b917)] -> css selector: input[value='Login']]
+2023-11-15 23:37:56 INFO  TestBase:78 - Finding element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type
+88064 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type
+2023-11-15 23:37:56 INFO  TestBase:84 - Found element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type
+88092 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type
+2023-11-15 23:37:56 INFO  TestBase:90 - Clicking on Desktops
+88106 [main] INFO com.naveenautomation.base.TestBase  - Clicking on Desktops
+2023-11-15 23:37:56 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (a29e4998d42aa90b513eb0f7fee6b917)] -> css selector: ul[class='nav navbar-nav']>li:first-of-type]
+88148 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (a29e4998d42aa90b513eb0f7fee6b917)] -> css selector: ul[class='nav navbar-nav']>li:first-of-type]
+2023-11-15 23:37:56 INFO  TestBase:78 - Finding element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)
+88148 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)
+2023-11-15 23:37:56 INFO  TestBase:84 - Found element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)
+88173 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)
+2023-11-15 23:37:56 INFO  TestBase:90 - Clicking on Mac (1)
+88182 [main] INFO com.naveenautomation.base.TestBase  - Clicking on Mac (1)
+2023-11-15 23:37:58 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (a29e4998d42aa90b513eb0f7fee6b917)] -> css selector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)]
+89473 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (a29e4998d42aa90b513eb0f7fee6b917)] -> css selector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)]
+2023-11-15 23:37:58 INFO  TestBase:78 - Finding element using By.xpath: //span[text()='Add to Cart']
+89473 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.xpath: //span[text()='Add to Cart']
+2023-11-15 23:37:58 INFO  TestBase:84 - Found element using By.xpath: //span[text()='Add to Cart']
+89499 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.xpath: //span[text()='Add to Cart']
+2023-11-15 23:37:58 INFO  TestBase:90 - Clicking on 
+89508 [main] INFO com.naveenautomation.base.TestBase  - Clicking on 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 30964
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 15, 2023 11:37:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validateCompareProductButton" classname="com.naveenautomation.test.ProductDetailsPageTest" time="4.392"/>
+  <testcase name="validateItemAddToWishlist" classname="com.naveenautomation.test.ProductDetailsPageTest" time="3.592"/>
+  <testcase name="validatePriceOfProduct" classname="com.naveenautomation.test.ProductDetailsPageTest" time="2.589"/>
+  <testcase name="validateTiltleOfProduct" classname="com.naveenautomation.test.ProductDetailsPageTest" time="2.953"/>
+  <testcase name="validateIfUserdidAReturn" classname="com.naveenautomation.test.ReturnPageTest" time="1.907"/>
+  <testcase name="validateNumberOfRewardPoints" classname="com.naveenautomation.test.RewardPageTest" time="2.175"/>
+  <testcase name="validateModificationInWishList" classname="com.naveenautomation.test.WishlistPageTest" time="14.188">
+    <failure message="element not interactable&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-E9NU9A2&apos;, ip: &apos;10.0.0.170&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a36c0819346a846205ee41b7dc44094a" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E9NU9A2', ip: '10.0.0.170', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a36c0819346a846205ee41b7dc44094a
+	at com.naveenautomation.test.WishlistPageTest.validateModificationInWishList(WishlistPageTest.java:28)
+</failure>
+    <system-out><![CDATA[2023-11-15 23:38:53 INFO  TestBase:78 - Finding element using By.cssSelector: input[name='email']
+144897 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[name='email']
+2023-11-15 23:38:53 INFO  TestBase:84 - Found element using By.cssSelector: input[name='email']
+144922 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[name='email']
+2023-11-15 23:38:53 INFO  TestBase:78 - Finding element using By.cssSelector: input[name='password']
+145007 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[name='password']
+2023-11-15 23:38:53 INFO  TestBase:84 - Found element using By.cssSelector: input[name='password']
+145020 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[name='password']
+2023-11-15 23:38:53 INFO  TestBase:78 - Finding element using By.cssSelector: input[value='Login']
+145072 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: input[value='Login']
+2023-11-15 23:38:53 INFO  TestBase:84 - Found element using By.cssSelector: input[value='Login']
+145100 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: input[value='Login']
+2023-11-15 23:38:53 INFO  TestBase:90 - Clicking on 
+145113 [main] INFO com.naveenautomation.base.TestBase  - Clicking on 
+2023-11-15 23:38:55 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (a36c0819346a846205ee41b7dc44094a)] -> css selector: input[value='Login']]
+147158 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (a36c0819346a846205ee41b7dc44094a)] -> css selector: input[value='Login']]
+2023-11-15 23:38:55 INFO  TestBase:78 - Finding element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type
+147160 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type
+2023-11-15 23:38:55 INFO  TestBase:84 - Found element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type
+147212 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type
+2023-11-15 23:38:55 INFO  TestBase:90 - Clicking on Desktops
+147229 [main] INFO com.naveenautomation.base.TestBase  - Clicking on Desktops
+2023-11-15 23:38:55 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (a36c0819346a846205ee41b7dc44094a)] -> css selector: ul[class='nav navbar-nav']>li:first-of-type]
+147279 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (a36c0819346a846205ee41b7dc44094a)] -> css selector: ul[class='nav navbar-nav']>li:first-of-type]
+2023-11-15 23:38:55 INFO  TestBase:78 - Finding element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)
+147279 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)
+2023-11-15 23:38:55 INFO  TestBase:84 - Found element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)
+147306 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)
+2023-11-15 23:38:55 INFO  TestBase:90 - Clicking on Mac (1)
+147315 [main] INFO com.naveenautomation.base.TestBase  - Clicking on Mac (1)
+2023-11-15 23:38:57 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (a36c0819346a846205ee41b7dc44094a)] -> css selector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)]
+148850 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (a36c0819346a846205ee41b7dc44094a)] -> css selector: ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)]
+2023-11-15 23:38:57 INFO  TestBase:78 - Finding element using By.cssSelector: button[data-original-title='Add to Wish List']
+148851 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.cssSelector: button[data-original-title='Add to Wish List']
+2023-11-15 23:38:57 INFO  TestBase:84 - Found element using By.cssSelector: button[data-original-title='Add to Wish List']
+148873 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.cssSelector: button[data-original-title='Add to Wish List']
+2023-11-15 23:38:57 INFO  TestBase:90 - Clicking on 
+148883 [main] INFO com.naveenautomation.base.TestBase  - Clicking on 
+2023-11-15 23:38:57 INFO  TestBase:96 - Clicked on [[ChromeDriver: chrome on WINDOWS (a36c0819346a846205ee41b7dc44094a)] -> css selector: button[data-original-title='Add to Wish List']]
+148934 [main] INFO com.naveenautomation.base.TestBase  - Clicked on [[ChromeDriver: chrome on WINDOWS (a36c0819346a846205ee41b7dc44094a)] -> css selector: button[data-original-title='Add to Wish List']]
+2023-11-15 23:38:57 INFO  TestBase:78 - Finding element using By.xpath: //span[text()='Wish List (1)']
+148934 [main] INFO com.naveenautomation.base.TestBase  - Finding element using By.xpath: //span[text()='Wish List (1)']
+2023-11-15 23:38:57 INFO  TestBase:84 - Found element using By.xpath: //span[text()='Wish List (1)']
+148958 [main] INFO com.naveenautomation.base.TestBase  - Found element using By.xpath: //span[text()='Wish List (1)']
+2023-11-15 23:38:57 INFO  TestBase:90 - Clicking on 
+148966 [main] INFO com.naveenautomation.base.TestBase  - Clicking on 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 24866
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 15, 2023 11:38:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

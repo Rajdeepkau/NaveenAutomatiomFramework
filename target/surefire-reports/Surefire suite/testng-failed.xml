@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.naveenautomation.test.AccountPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeDown"/>
+          <include name="validateCurrencyChange"/>
+          <include name="loggerSteup"/>
+        </methods>
+      </class> <!-- com.naveenautomation.test.AccountPageTest -->
+      <class name="com.naveenautomation.test.ProductDetailsPageTest">
+        <methods>
+          <include name="validateAddToCart"/>
+          <include name="closeDown"/>
+          <include name="setUp"/>
+          <include name="loggerSteup"/>
+        </methods>
+      </class> <!-- com.naveenautomation.test.ProductDetailsPageTest -->
+      <class name="com.naveenautomation.test.CheckoutPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateInvalidCouponCode"/>
+          <include name="closeDown"/>
+          <include name="loggerSteup"/>
+        </methods>
+      </class> <!-- com.naveenautomation.test.CheckoutPageTest -->
+      <class name="com.naveenautomation.test.WishlistPageTest">
+        <methods>
+          <include name="validateModificationInWishList"/>
+          <include name="setUp"/>
+          <include name="closeDown"/>
+          <include name="loggerSteup"/>
+        </methods>
+      </class> <!-- com.naveenautomation.test.WishlistPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
