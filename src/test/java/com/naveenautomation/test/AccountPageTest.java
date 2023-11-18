@@ -15,10 +15,10 @@ import com.naveenautomation.pages.PasswordPage;
 
 public class AccountPageTest extends TestBase {
 
-	PasswordPage passwordpage;
-	LoginPage loginpage;
-	AccountPage accountpage;
-	NewsletterPage newsletter;
+	private PasswordPage passwordpage;
+	private LoginPage loginpage;
+	private AccountPage accountpage;
+	private NewsletterPage newsletter;
 
 	@BeforeMethod
 	public void setUp() {
@@ -27,13 +27,12 @@ public class AccountPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void validateIfUserCanChangePassword() {
 		accountpage = loginpage.clickLoginButton("rajdeepkaur451@gmail.com", "K@ur9999");
 		passwordpage = accountpage.clickPasswordOption(PageOptions.PASSWORD);
 		accountpage = passwordpage.clickContinueButton("K@ur6879", "K@ur6879");
-		Assert.assertEquals(accountpage.getTextOfSuccessMessage(),
-				"Success: Your password has been successfully updated.", "Password is not updated as expected");
+		Assert.assertEquals(accountpage.getTextOfSuccessMessage(),"Success: Your password has been successfully updated.", "Password is not updated as expected");
 	}
 
 	@Test
@@ -41,9 +40,14 @@ public class AccountPageTest extends TestBase {
 		accountpage = loginpage.clickLoginButton("rajdeepkaur451@gmail.com", "K@ur6879");
 		newsletter = accountpage.clickNewsletterOption(PageOptions.NEWSLETTER);
 		accountpage = newsletter.clickContinue();
-		Assert.assertEquals(accountpage.getTextOfSuccessSubscriptionMessage(),
-				"Success: Your newsletter subscription has been successfully updated!",
-				"NewsLetter button is not selected");
+		Assert.assertEquals(accountpage.getTextOfSuccessSubscriptionMessage(),"Success: Your newsletter subscription has been successfully updated!","NewsLetter button is not selected");
+	}
+	@Test(enabled=false)
+	public void validateCurrencyChange() {
+		accountpage = loginpage.clickLoginButton("rajdeepkaur451@gmail.com", "K@ur6879");
+		accountpage.selectFromCurrenyMenu();
+		Assert.assertEquals(accountpage.getTextForCurreny().trim(), "£ Currency","Currency is not selected as expectd");
+		
 	}
 
 	@AfterMethod

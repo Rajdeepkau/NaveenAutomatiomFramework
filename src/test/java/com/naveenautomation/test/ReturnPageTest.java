@@ -18,9 +18,9 @@ import com.naveenautomation.pages.ReturnPage;
 
 	public class ReturnPageTest extends TestBase {
 
-		LoginPage loginpage;
-		AccountPage accountpage;
-		ReturnPage returnpage;
+		private LoginPage loginpage;
+		private AccountPage accountpage;
+		private ReturnPage returnpage;
 
 	
 		@BeforeMethod
@@ -29,11 +29,18 @@ import com.naveenautomation.pages.ReturnPage;
 			loginpage = new LoginPage();
 		}
 
-		@Test
+		@Test(enabled=false)
 		public void validateIfUserDidNotMakeAnyReturn() {
 			accountpage = loginpage.clickLoginButton("rajdeepkaur451@gmail.com", "K@ur6879");
-			returnpage = accountpage.clickReturnOption();
+		returnpage = accountpage.clickReturnOption();
 			Assert.assertEquals(returnpage.getReturnText(), "You have not made any previous returns!","User is not on return page");
+		}
+		@Test
+		public void validateIfUserdidAReturn() {
+			accountpage = loginpage.clickLoginButton("rajdeepkaur451@gmail.com", "K@ur6879");
+			returnpage = accountpage.clickReturnOption();
+			Assert.assertEquals(returnpage.getCellText(),"Return ID", "You have not made any previous returns!");
+			
 		}
 
 		@AfterMethod

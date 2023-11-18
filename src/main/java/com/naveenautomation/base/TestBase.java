@@ -35,7 +35,7 @@ public class TestBase {
 	public static Logger logger;
 	public WebdriverEvents events;
 	public EventFiringWebDriver e_driver;
-	private static final boolean RUN_ON_GRID = true;
+	private static final boolean RUN_ON_GRID = false;
 
 	@BeforeClass
 	public void loggerSteup() {
@@ -46,7 +46,9 @@ public class TestBase {
 	}
 
 	public enum WindowOption {
-		CHROME("Chrome"), EDGE("Edge"), FIREFOX("Firefox");
+		CHROME("Chrome"),
+		EDGE("Edge"), 
+		FIREFOX("Firefox");
 
 		private final String value;
 
@@ -106,10 +108,18 @@ public class TestBase {
 	}
 
 	public enum PageOptions {
-		MY_ACCOUNT("My Account"), EDIT_ACCOUNT("Edit Account"), PASSWORD("Password"), ADDRESS_BOOK("Address Book"),
-		WISH_LIST("Wish List"), ORDER_HISTORY("Order History"), DOWNLOADS("Downloads"),
-		RECURRING_PAYMENTS("Recurring payments"), REWARD_POINTS("Reward Points"), RETURNS("Returns"),
-		TRANSACTIONS("Transactions"), NEWSLETTER("Newsletter"), LOGOUT("Logout");
+		MY_ACCOUNT("My Account"), 
+		EDIT_ACCOUNT("Edit Account"), 
+		PASSWORD("Password"), 
+		ADDRESS_BOOK("Address Book"),
+		WISH_LIST("Wish List"), 
+		ORDER_HISTORY("Order History"), 
+		DOWNLOADS("Downloads"),
+		RECURRING_PAYMENTS("Recurring payments"), 
+		REWARD_POINTS("Reward Points"), 
+		RETURNS("Returns"),
+		TRANSACTIONS("Transactions"), 
+		NEWSLETTER("Newsletter"), LOGOUT("Logout");
 
 		private final String value;
 

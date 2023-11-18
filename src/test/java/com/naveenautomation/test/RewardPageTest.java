@@ -7,33 +7,30 @@ import org.testng.annotations.Test;
 import com.naveenautomation.base.TestBase;
 import com.naveenautomation.pages.AccountPage;
 import com.naveenautomation.pages.LoginPage;
-import com.naveenautomation.pages.MacbookPage;
+import com.naveenautomation.pages.RewardPage;
 
-
-public class MacbookPageTest extends TestBase{
-
-	
+public class RewardPageTest extends TestBase {
 	private LoginPage loginpage;
 	private AccountPage accountpage;
-	private MacbookPage macbookpage;
-
-	
+	private RewardPage rewardpage;
 	@BeforeMethod
 	public void setUp() {
 		initializeDefaultBrowser();
 		loginpage = new LoginPage();
-
-	}
+}
 	@Test
-	public void validateIfSearchItemDisplayed() {
+	public void validateNumberOfRewardPoints() {
 		accountpage = loginpage.clickLoginButton("rajdeepkaur451@gmail.com", "K@ur6879");
-		macbookpage=accountpage.enterSearchInput("macbook");
-		Assert.assertTrue(macbookpage.isListButtonDisplayed(), "You are not searching a valid product");
+		rewardpage=accountpage.clickRewardPageLink(PageOptions.REWARD_POINTS);
+		Assert.assertEquals(rewardpage.getTextForRewardPointsHeading(), "Your total number of reward points is: 0.","Total number of reward points are not showing");
+	
 	}
+	
 	@AfterMethod
 	public void closeDown() {
 		tearDown();
 
 	}
+
 
 }

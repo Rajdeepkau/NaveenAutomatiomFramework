@@ -15,11 +15,15 @@ public class ReturnPage extends TestBase {
 	WebElement returnMessage;
 	@FindBy(xpath = "//a[text()='Continue']")
 	WebElement continueBtn;
-
+	@FindBy(css = "table[class='table table-bordered table-hover']>thead>tr>td:nth-of-type(1)")
+	WebElement ReurntableCell;
 	public String getReturnText() {
 		return returnMessage.getText();
-
-	}
+}
+	public String getCellText() {
+		return ReurntableCell.getText();
+}
+	
 
 	public AccountPage clickContinueButton() {
 		continueBtn.click();

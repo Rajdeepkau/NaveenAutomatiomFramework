@@ -12,10 +12,10 @@ import com.naveenautomation.pages.ContactSuccessPage;
 import com.naveenautomation.pages.LoginPage;
 
 public class ContactSuccessPageTest extends TestBase {
-	LoginPage loginpage;
-	AccountPage accountpage;
-	ContactPage contactpage;
-	ContactSuccessPage contactsuccesspage;
+	private LoginPage loginpage;
+	private AccountPage accountpage;
+	private ContactPage contactpage;
+	private ContactSuccessPage contactsuccesspage;
 
 	@BeforeMethod
 	public void setUp() {

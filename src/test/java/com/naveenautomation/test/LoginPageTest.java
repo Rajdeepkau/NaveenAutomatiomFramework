@@ -13,8 +13,8 @@ import com.naveenautomation.pages.LoginPage;
 import com.naveenautomation.utils.ExcelUtils;
 
 public class LoginPageTest extends TestBase {
-	LoginPage loginpage;
-	AccountPage accountpage;
+	private LoginPage loginpage;
+	private AccountPage accountpage;
 
 	@BeforeMethod
 	public void setUp() {

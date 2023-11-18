@@ -34,6 +34,14 @@ public class AccountPage extends TestBase {
 	WebElement searchInput;
 	@FindBy(css = "i[class='fa fa-search']")
 	WebElement searchbutton;
+	@FindBy(css = "button[class='btn btn-link dropdown-toggle']")
+	WebElement currencybutton;
+	@FindBy(css = "ul[class='dropdown-menu']>li:nth-of-type(2)")
+	WebElement poundCurrency;
+	@FindBy(css = "ul[class='nav navbar-nav']>li:first-of-type")
+	WebElement desktopsOption;
+	@FindBy(css = "ul[class='nav navbar-nav']>li:first-of-type>div>div>ul>li:nth-of-type(2)")
+	WebElement macBook;
 
 	public String getTextOfHeading() {
 		return myAccountHeading.getText();
@@ -86,5 +94,32 @@ public class AccountPage extends TestBase {
 		return new NewsletterPage();
 	}
 
-}
+	private void clickOnCurrency() {
+		currencybutton.click();
+	}
 
+	public void selectFromCurrenyMenu() {
+		clickOnCurrency();
+		poundCurrency.click();
+	}
+
+	public String getTextForCurreny() {
+		return currencybutton.getText();
+	}
+
+	public ProductDetailsPage selectOptionFromDesktops() {
+		desktopsOption.click();
+		macBook.click();
+		return new ProductDetailsPage();
+	}
+
+	public AddressBookPage clickAddressBook(PageOptions sideMenuSelected) {
+		selectSideBarOption(sideMenuSelected);
+		return new AddressBookPage();
+	}
+	public RewardPage clickRewardPageLink(PageOptions sideMenuSelected) {
+		selectSideBarOption(sideMenuSelected);
+		return new RewardPage();
+	}
+
+}
