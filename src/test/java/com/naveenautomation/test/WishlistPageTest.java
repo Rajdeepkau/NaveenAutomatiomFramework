@@ -27,6 +27,7 @@ public class WishlistPageTest extends TestBase {
 		productPage.clickOnAddToWishlist();
 		wishlistpage=productPage.clickOnWishListLink();
 		wishlistpage.clickOnRemoveButtton();
+		System.out.println( productPage.getTextOfSuccessForAddToWishlist());
 		Assert.assertEquals( productPage.getTextOfSuccessForAddToWishlist().replaceAll("\\s+", " ").trim(), "Success: You have modified your wish list! ×".trim(), "Product is not added to wishlist");
 	}
 	
