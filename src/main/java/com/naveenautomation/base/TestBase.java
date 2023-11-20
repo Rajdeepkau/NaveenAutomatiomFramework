@@ -4,9 +4,9 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
@@ -18,13 +18,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
 import com.naveenautomation.utils.WebdriverEvents;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
@@ -34,8 +33,9 @@ public class TestBase {
 	private final String URL = "https://naveenautomationlabs.com/opencart/index.php?route=account/login";
 	public static Logger logger;
 	public WebdriverEvents events;
-	public EventFiringWebDriver e_driver;
+	//public EventFiringWebDriver e_driver;
 	private static final boolean RUN_ON_GRID = false;
+	 private static final String BROWSER_PARAM = "browser";
 
 	@BeforeClass
 	public void loggerSteup() {
@@ -60,39 +60,43 @@ public class TestBase {
 			return value;
 		}
 	}
+	public static String getJenkinsParameter() {
+        return System.getProperty(BROWSER_PARAM, "chrome");
+    }
 
 	public void intialisation(WindowOption option) {
+		 String browserOption = getJenkinsParameter();
 		if (RUN_ON_GRID) {
 			try {
-				wd = new RemoteWebDriver(new URL("http://10.0.0.170:4444"),getOptions());
+				wd = new RemoteWebDriver(new URL("http://localhost:4444/ui"),getOptions());
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
 		} else {
 
-		switch (option) {
+		switch (WindowOption.valueOf(browserOption.toUpperCase())) {
 		case CHROME:
-			wd = WebDriverManager.chromedriver().create();
+			wd = new ChromeDriver();
 			break;
 		case EDGE:
-			wd = WebDriverManager.edgedriver().create();
+			wd = new EdgeDriver();
 			break;
 		case FIREFOX:
-			wd = WebDriverManager.firefoxdriver().create();
+			wd = new FirefoxDriver();
 			break;
 		default:
 			throw new IllegalArgumentException();
 		}
 		}
 		// Wrap the instance
-		e_driver = new EventFiringWebDriver(wd);
+	//	e_driver = new EventFiringWebDriver(wd);
 
 		// Events which need to be captured
 		events = new WebdriverEvents();
-		e_driver.register(events);
+	//	e_driver.register(events);
 
 		// Assigning back the value to Web driver
-		wd = e_driver;
+		//wd = e_driver;
 
 		wd.get(URL);
 
@@ -100,8 +104,7 @@ public class TestBase {
 
 		wd.manage().deleteAllCookies();
 
-		wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	}
+		wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));	}
 
 	public void initializeDefaultBrowser() {
 		intialisation(DEFAULT_BROWSER);
