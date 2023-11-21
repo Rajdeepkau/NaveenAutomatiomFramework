@@ -1,4 +1,5 @@
 package com.naveenautomation.base;
+
 import java.net.URL;
 import java.io.File;
 import java.io.IOException;
@@ -33,9 +34,9 @@ public class TestBase {
 	private final String URL = "https://naveenautomationlabs.com/opencart/index.php?route=account/login";
 	public static Logger logger;
 	public WebdriverEvents events;
-	//public EventFiringWebDriver e_driver;
+	// public EventFiringWebDriver e_driver;
 	private static final boolean RUN_ON_GRID = false;
-	 private static final String BROWSER_PARAM = "browser";
+	private static final String BROWSER_PARAM = "browser";
 
 	@BeforeClass
 	public void loggerSteup() {
@@ -46,9 +47,7 @@ public class TestBase {
 	}
 
 	public enum WindowOption {
-		CHROME("Chrome"),
-		EDGE("Edge"), 
-		FIREFOX("Firefox");
+		CHROME("Chrome"), EDGE("Edge"), FIREFOX("Firefox");
 
 		private final String value;
 
@@ -60,43 +59,48 @@ public class TestBase {
 			return value;
 		}
 	}
+
 	public static String getJenkinsParameter() {
-        return System.getProperty(BROWSER_PARAM, "chrome");
-    }
+		return System.getProperty(BROWSER_PARAM, "chrome");
+	}
 
-	public void intialisation(WindowOption option) {
-		 String browserOption = getJenkinsParameter();
-		if (RUN_ON_GRID) {
-			try {
-				wd = new RemoteWebDriver(new URL("http://localhost:4444/ui"),getOptions());
-			} catch (MalformedURLException e) {
-				e.printStackTrace();
-			}
-		} else {
+	public void initializeDefaultBrowser() {
+	    String browserOption = getJenkinsParameter();
+	    
+	    // Ensure WebDriverManager initializes the appropriate driver
+	   // WebDriverManager.chromedriver().setup(); // or replace with the appropriate driver setup method
 
-		switch (WindowOption.valueOf(browserOption.toUpperCase())) {
-		case CHROME:
-			wd = new ChromeDriver();
-			break;
-		case EDGE:
-			wd = new EdgeDriver();
-			break;
-		case FIREFOX:
-			wd = new FirefoxDriver();
-			break;
-		default:
-			throw new IllegalArgumentException();
-		}
-		}
-		// Wrap the instance
-	//	e_driver = new EventFiringWebDriver(wd);
+	    if (RUN_ON_GRID) {
+	        try {
+	            wd = new RemoteWebDriver(new URL("http://localhost:4444/ui"), getOptions());
+	        } catch (MalformedURLException e) {
+	            e.printStackTrace();
+	        }
+	    } else {
+	        switch (WindowOption.valueOf(browserOption.toUpperCase())) {
+	            case CHROME:
+	                wd = new ChromeDriver();
+	                break;
+	            case EDGE:
+	                wd = new EdgeDriver();
+	                break;
+	            case FIREFOX:
+	                wd = new FirefoxDriver();
+	                break;
+	            default:
+	                throw new IllegalArgumentException("Invalid browser option: " + browserOption);
+	        }
+	    }
+
+	  // Wrap the instance
+		// e_driver = new EventFiringWebDriver(wd);
 
 		// Events which need to be captured
 		events = new WebdriverEvents();
-	//	e_driver.register(events);
+		// e_driver.register(events);
 
 		// Assigning back the value to Web driver
-		//wd = e_driver;
+		// wd = e_driver;
 
 		wd.get(URL);
 
@@ -104,25 +108,15 @@ public class TestBase {
 
 		wd.manage().deleteAllCookies();
 
-		wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));	}
-
-	public void initializeDefaultBrowser() {
-		intialisation(DEFAULT_BROWSER);
+		wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
+	
 	public enum PageOptions {
-		MY_ACCOUNT("My Account"), 
-		EDIT_ACCOUNT("Edit Account"), 
-		PASSWORD("Password"), 
-		ADDRESS_BOOK("Address Book"),
-		WISH_LIST("Wish List"), 
-		ORDER_HISTORY("Order History"), 
-		DOWNLOADS("Downloads"),
-		RECURRING_PAYMENTS("Recurring payments"), 
-		REWARD_POINTS("Reward Points"), 
-		RETURNS("Returns"),
-		TRANSACTIONS("Transactions"), 
-		NEWSLETTER("Newsletter"), LOGOUT("Logout");
+		MY_ACCOUNT("My Account"), EDIT_ACCOUNT("Edit Account"), PASSWORD("Password"), ADDRESS_BOOK("Address Book"),
+		WISH_LIST("Wish List"), ORDER_HISTORY("Order History"), DOWNLOADS("Downloads"),
+		RECURRING_PAYMENTS("Recurring payments"), REWARD_POINTS("Reward Points"), RETURNS("Returns"),
+		TRANSACTIONS("Transactions"), NEWSLETTER("Newsletter"), LOGOUT("Logout");
 
 		private final String value;
 
@@ -158,10 +152,10 @@ public class TestBase {
 			e.printStackTrace();
 		}
 	}
+
 	public MutableCapabilities getOptions() {
 		return new ManageBrowserOptions().getOption(DEFAULT_BROWSER);
 	}
-
 
 	public void tearDown() {
 		wd.quit();
