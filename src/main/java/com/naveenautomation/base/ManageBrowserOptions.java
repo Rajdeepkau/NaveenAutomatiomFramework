@@ -1,8 +1,10 @@
 package com.naveenautomation.base;
+
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
+
 public class ManageBrowserOptions {
 	private ChromeOptions getChromeOptions(boolean runHeadless) {
 		ChromeOptions options = new ChromeOptions();
@@ -37,5 +39,3 @@ public class ManageBrowserOptions {
 	}
 
 }
-
-

@@ -1,5 +1,4 @@
 package com.naveenautomation.base;
-
 import java.net.URL;
 import java.io.File;
 import java.io.IOException;
@@ -24,17 +23,17 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
 import com.naveenautomation.utils.WebdriverEvents;
 
 public class TestBase {
 
 	public static WebDriver wd;
-
-	private final WindowOption DEFAULT_BROWSER = WindowOption.CHROME;
 	private final String URL = "https://naveenautomationlabs.com/opencart/index.php?route=account/login";
 	public static Logger logger;
 	public WebdriverEvents events;
-	// public EventFiringWebDriver e_driver;
+	//public EventFiringWebDriver e_driver;
 	private static final boolean RUN_ON_GRID = false;
 	private static final String BROWSER_PARAM = "browser";
 
@@ -60,45 +59,44 @@ public class TestBase {
 		}
 	}
 
+	
 	public static String getJenkinsParameter() {
-		return System.getProperty(BROWSER_PARAM, "chrome");
-	}
+        return System.getProperty(BROWSER_PARAM, "chrome");
+    }
 
-	public void initializeDefaultBrowser() {
-	    String browserOption = getJenkinsParameter();
-	    
-	    // Ensure WebDriverManager initializes the appropriate driver
-	   // WebDriverManager.chromedriver().setup(); // or replace with the appropriate driver setup method
+    public void initializeDefaultBrowser() {
+        String browserOption = getJenkinsParameter();
+        try {
+            if (RUN_ON_GRID) {
+                wd = new RemoteWebDriver(new URL("http://localhost:4444/ui"), getOptions());
+            } else {
+                switch (WindowOption.valueOf(browserOption.toUpperCase())) {
+                    case CHROME:
+                        wd = new ChromeDriver();
+                        break;
+                    case EDGE:
+                        wd = new EdgeDriver();
+                        break;
+                    case FIREFOX:
+                        wd = new FirefoxDriver();
+                        break;
+                    default:
+                        throw new IllegalArgumentException("Invalid browser option: " + browserOption);
+                }
+            }
 
-	    if (RUN_ON_GRID) {
-	        try {
-	            wd = new RemoteWebDriver(new URL("http://localhost:4444/ui"), getOptions());
-	        } catch (MalformedURLException e) {
-	            e.printStackTrace();
-	        }
-	    } else {
-	        switch (WindowOption.valueOf(browserOption.toUpperCase())) {
-	            case CHROME:
-	                wd = new ChromeDriver();
-	                break;
-	            case EDGE:
-	                wd = new EdgeDriver();
-	                break;
-	            case FIREFOX:
-	                wd = new FirefoxDriver();
-	                break;
-	            default:
-	                throw new IllegalArgumentException("Invalid browser option: " + browserOption);
-	        }
-	    }
+         
+        } catch (MalformedURLException e) {
+            logger.error("Error initializing WebDriver: {}");
+            e.printStackTrace();
+        }
+    
 
-	  // Wrap the instance
+		 //Wrap the instance
 		// e_driver = new EventFiringWebDriver(wd);
-
-		// Events which need to be captured
+       // Events which need to be captured
 		events = new WebdriverEvents();
 		// e_driver.register(events);
-
 		// Assigning back the value to Web driver
 		// wd = e_driver;
 
@@ -111,7 +109,6 @@ public class TestBase {
 		wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
-	
 	public enum PageOptions {
 		MY_ACCOUNT("My Account"), EDIT_ACCOUNT("Edit Account"), PASSWORD("Password"), ADDRESS_BOOK("Address Book"),
 		WISH_LIST("Wish List"), ORDER_HISTORY("Order History"), DOWNLOADS("Downloads"),
@@ -140,21 +137,26 @@ public class TestBase {
 	}
 
 	public static void failedTestScreenShot(String testMethodName) {
-		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+	    if (wd != null) {
+	        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 
-		File screenShotFfile = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
+	        File screenShotFile = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
 
-		try {
-			FileUtils.copyFile(screenShotFfile,
-					new File("./FailedTestCasesScreenShot\\" + "_" + testMethodName + "_" + timeStamp + ".jpg"));
-		} catch (IOException e) {
-			System.out.println("................................The IO Exception is ...... " + e);
-			e.printStackTrace();
-		}
+	        try {
+	            FileUtils.copyFile(screenShotFile,
+	                    new File("./FailedTestCasesScreenShot/" + "_" + testMethodName + "_" + timeStamp + ".jpg"));
+	        } catch (IOException e) {
+	            System.out.println("The IO Exception is: " + e);
+	            e.printStackTrace();
+	        }
+	    } else {
+	        System.out.println("WebDriver is not initialized. Unable to take screenshot.");
+	    }
 	}
 
 	public MutableCapabilities getOptions() {
-		return new ManageBrowserOptions().getOption(DEFAULT_BROWSER);
+	    String browserOption = getJenkinsParameter();
+	    return new ManageBrowserOptions().getOption(TestBase.WindowOption.valueOf(browserOption.toUpperCase()));
 	}
 
 	public void tearDown() {
