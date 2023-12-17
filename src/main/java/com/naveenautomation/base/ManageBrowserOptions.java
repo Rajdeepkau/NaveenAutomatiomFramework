@@ -9,7 +9,11 @@ public class ManageBrowserOptions {
 	private ChromeOptions getChromeOptions(boolean runHeadless) {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
-		options.setHeadless(runHeadless);
+		if (runHeadless) {
+			options.addArguments("--headless");
+
+		}
+
 		return options;
 	}
 
